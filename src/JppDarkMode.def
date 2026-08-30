@@ -1,0 +1,159 @@
+LIBRARY JppDarkMode
+EXPORTS
+    ; Lifecycle
+    JppDarkMode_Initialize
+    JppDarkMode_Shutdown
+
+    ; Core enable / query
+    JppDarkMode_SetDarkMode
+    JppDarkMode_IsEnabled
+    JppDarkMode_IsDarkMenuEnabled
+    JppDarkMode_IsEnabledForPlugins
+    JppDarkMode_IsExperimentalActive
+    JppDarkMode_IsExperimentalSupported
+    JppDarkMode_IsWindowsModeEnabled
+    JppDarkMode_SetWindowsMode
+
+    ; OS version
+    JppDarkMode_IsWindows10
+    JppDarkMode_IsWindows11
+    JppDarkMode_GetWindowsBuildNumber
+
+    ; Theme / advanced options
+    JppDarkMode_GetThemeName
+    JppDarkMode_SetThemeName
+    JppDarkMode_GetToolBarIconSet
+    JppDarkMode_SetToolBarIconSet
+    JppDarkMode_GetTabIconSet
+    JppDarkMode_SetTabIconSet
+    JppDarkMode_UseTabTheme
+
+    ; Colour tone
+    JppDarkMode_SetDarkTone
+
+    ; Colour getters
+    JppDarkMode_GetBackgroundColor
+    JppDarkMode_GetSofterBackgroundColor
+    JppDarkMode_GetHotBackgroundColor
+    JppDarkMode_GetDarkerBackgroundColor
+    JppDarkMode_GetErrorBackgroundColor
+    JppDarkMode_GetTextColor
+    JppDarkMode_GetDarkerTextColor
+    JppDarkMode_GetDisabledTextColor
+    JppDarkMode_GetLinkTextColor
+    JppDarkMode_GetEdgeColor
+    JppDarkMode_GetHotEdgeColor
+    JppDarkMode_GetDisabledEdgeColor
+    JppDarkMode_GetQuickFindBackground
+
+    ; Colour setters
+    JppDarkMode_SetBackgroundColor
+    JppDarkMode_SetSofterBackgroundColor
+    JppDarkMode_SetHotBackgroundColor
+    JppDarkMode_SetDarkerBackgroundColor
+    JppDarkMode_SetErrorBackgroundColor
+    JppDarkMode_SetTextColor
+    JppDarkMode_SetDarkerTextColor
+    JppDarkMode_SetDisabledTextColor
+    JppDarkMode_SetLinkTextColor
+    JppDarkMode_SetEdgeColor
+    JppDarkMode_SetHotEdgeColor
+    JppDarkMode_SetDisabledEdgeColor
+    JppDarkMode_SetQuickFindBackgroundColor
+
+    ; Brushes / pens
+    JppDarkMode_GetBackgroundBrush
+    JppDarkMode_GetSofterBackgroundBrush
+    JppDarkMode_GetHotBackgroundBrush
+    JppDarkMode_GetDarkerBackgroundBrush
+    JppDarkMode_GetErrorBackgroundBrush
+    JppDarkMode_GetEdgeBrush
+    JppDarkMode_GetHotEdgeBrush
+    JppDarkMode_GetDisabledEdgeBrush
+    JppDarkMode_GetDarkerTextPen
+    JppDarkMode_GetEdgePen
+    JppDarkMode_GetHotEdgePen
+    JppDarkMode_GetDisabledEdgePen
+
+    ; Full colour sets
+    JppDarkMode_GetDarkModeDefaultColors
+    JppDarkMode_GetDarkRedModeColors
+    JppDarkMode_ChangeCustomTheme
+    JppDarkMode_GetIndividualTabColour
+
+    ; Colour utilities
+    JppDarkMode_InvertLightness
+    JppDarkMode_InvertLightnessSofter
+    JppDarkMode_CalculatePerceivedLightness
+
+    ; Refresh / settings
+    JppDarkMode_Refresh
+    JppDarkMode_HandleSettingChange
+    JppDarkMode_IsDarkModeReg
+
+    ; UAH menu bar
+    JppDarkMode_RunUAHWndProc
+    JppDarkMode_DrawUAHMenuNCBottomLine
+    JppDarkMode_SetMenuPositionCustom
+
+    ; Experimental helpers
+    JppDarkMode_InitExperimentalDarkMode
+    JppDarkMode_AllowDarkModeForApp
+    JppDarkMode_AllowDarkModeForWindow
+    JppDarkMode_SetTitleBarThemeColor
+    JppDarkMode_EnableDarkScrollBarForWindowAndChildren
+
+    ; Per-window theming
+    JppDarkMode_SetDarkTitleBar
+    JppDarkMode_SetDarkExplorerTheme
+    JppDarkMode_SetDarkScrollBar
+    JppDarkMode_SetDarkTooltips
+    JppDarkMode_SetDarkLineAbovePanelToolbar
+    JppDarkMode_SetDarkListView
+    JppDarkMode_DisableVisualStyle
+
+    ; Tree-view style
+    JppDarkMode_CalculateTreeViewStyle
+    JppDarkMode_SetTreeViewStyle
+    JppDarkMode_IsThemeDark
+
+    ; Border helpers
+    JppDarkMode_SetBorderEdge
+    JppDarkMode_SetBorder
+    JppDarkMode_RegisterScrollBar
+
+    ; Auto-completion
+    JppDarkMode_SetDarkAutoCompletion
+
+    ; Subclassing / auto-theme
+    JppDarkMode_SubclassButtonControl
+    JppDarkMode_SubclassGroupboxControl
+    JppDarkMode_SubclassTabControl
+    JppDarkMode_SubclassComboBoxControl
+    JppDarkMode_AutoSubclassAndThemeChildControls
+    JppDarkMode_AutoThemeChildControls
+    JppDarkMode_AutoSubclassAndThemeWindowNotify
+    JppDarkMode_AutoSubclassAndThemePlugin
+    JppDarkMode_SubclassTabUpDownControl
+    JppDarkMode_DoDarkMode
+
+    ; Custom-draw
+    JppDarkMode_DarkToolBarNotifyCustomDraw
+    JppDarkMode_DarkListViewNotifyCustomDraw
+    JppDarkMode_DarkTreeViewNotifyCustomDraw
+
+    ; Painting
+    JppDarkMode_PaintRoundFrameRect
+
+    ; CtlColor helpers
+    JppDarkMode_OnCtlColor
+    JppDarkMode_OnCtlColorSofter
+    JppDarkMode_OnCtlColorDarker
+    JppDarkMode_OnCtlColorError
+    JppDarkMode_OnCtlColorDarkerBGStaticText
+    JppDarkMode_OnCtlColorListbox
+    JppDarkMode_OnColorControl
+
+    ; Tooltips
+    JppDarkMode_CreateToolTipDark
+    JppDarkMode_CreateToolTipDarkRect
